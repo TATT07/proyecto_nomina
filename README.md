@@ -99,11 +99,3 @@ Diagrama de integración (diagrama.png)
 
 README.md (este archivo)
 
-yaml
-Copiar código
-
----
-
-👉 Con esto ya tienes el **README listo para subir con tu ZIP**. Solo necesitas crear una carpeta `evidencias/` dentro de `proyecto_nomina` y meter allí las capturas que tomaste (`pytest`, `cobertura`, `diagrama`).  
-
-¿Quieres que te prepare también un **template en LaTeX o Word** para el análisis/ventajas (por si lo 
