@@ -49,7 +49,7 @@ pytest --cov=src --cov-report=term-missing
 El siguiente diagrama representa el proceso de integración de módulos, comenzando desde los cálculos básicos (ISR, seguridad social, bonos, deducciones) hasta el módulo completo de nómina:
 
 📸 Evidencia:
-<img width="782" height="367" alt="diagrama" src="https://github.com/user-attachments/assets/7c07f5aa-f894-41f1-b58a-45d2d2176faa" />
+<img width="782" height="367" alt="diagrama" src="https://github.com/user-attachments/assets/83c6f7d7-bf86-4c45-919c-59bd5df18c14" />
 
 ✅ Conclusiones
 El enfoque Bottom-Up permitió validar correctamente los módulos de nómina.
