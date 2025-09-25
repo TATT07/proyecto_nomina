@@ -1,100 +1,65 @@
-# 🧮 Proyecto: Testing Bottom-Up - Sistema de Nómina
+# Proyecto Nómina – Pruebas de Integración Bottom-Up
 
-## 📌 Descripción
-Este proyecto implementa **pruebas Bottom-Up** para un sistema de cálculo de nómina.  
-Se comienza validando los módulos más básicos (impuestos, bonos y deducciones) usando **drivers de prueba** y luego se integran en un sistema completo (`NominaSistema`).  
-
-El enfoque **Bottom-Up** permite:
-- Validar primero las piezas atómicas del sistema.
-- Construir confianza en los módulos antes de la integración.
-- Detectar errores temprano en los cálculos.
+Este repositorio contiene la implementación de un sistema de **cálculo de nómina** y la estrategia de pruebas de integración aplicando el enfoque **Bottom-Up**.
 
 ---
 
-## 🗂️ Estructura del Proyecto
-proyecto_nomina/
-├── modulos/
-│ ├── init.py
-│ ├── calculadora_impuestos.py
-│ ├── calculadora_bonos.py
-│ └── calculadora_deducciones.py
-├── drivers/
-│ ├── init.py
-│ └── test_driver.py
-├── nomina_sistema.py
-├── test_bottom_up.py
-└── README.md
+## 📌 Descripción del Proyecto
+El objetivo del proyecto es construir el sistema de nómina de forma incremental, integrando y validando primero los **módulos base** (cálculo de ISR, seguro social, bonos, deducciones, etc.), y posteriormente integrando niveles superiores hasta completar la funcionalidad global.
 
-yaml
-Copiar código
+Se aplicó el enfoque **Bottom-Up** porque:
+- Permite validar los **módulos fundamentales** antes de subir a capas más complejas.
+- Facilita detectar errores en cálculos básicos.
+- Reduce el uso de stubs, ya que primero se prueban componentes reales de bajo nivel.
 
 ---
 
-## ⚙️ Requisitos
-- Python 3.8+ (se probó en Python 3.13.7)
-- pytest (`pip install pytest`)
-- pytest-cov (`pip install pytest-cov`)
+## ⚙️ Tecnologías Utilizadas
+- **Python 3.13**
+- **Pytest** para pruebas unitarias e integración
+- **Pytest-cov** para cobertura de código
+- **Markdown** para documentación
+- **Flowchart Online** para diagrama de integración
 
 ---
 
-## ▶️ Ejecución de Pruebas
-
-### Nivel 1: Pruebas de módulos base
+## 🚀 Ejecución de Pruebas
+### Pruebas de Nivel Base
 ```bash
 python -m pytest test_bottom_up.py::TestNivelBase -v
-Nivel 2: Pruebas de integración
+📸 Evidencia:
+<img width="1468" height="378" alt="nomina1" src="https://github.com/user-attachments/assets/519924e6-f812-4981-a5ec-df0a5369a0f9" />
+
+Pruebas de Integración
 bash
 Copiar código
-python -m pytest test_bottom_up.py::TestIntegracion -v
-Cobertura (reporte HTML)
+python -m pytest test_bottom_up.py -v
+📸 Evidencia:
+<img width="1461" height="387" alt="nomina2" src="https://github.com/user-attachments/assets/9b9272d2-bf40-4e2d-95a8-b57cd8461b51" />
+
+📊 Cobertura de Código
+Se midió la cobertura con:
+
 bash
 Copiar código
-python -m pytest --cov=modulos --cov-report=html
-Abrir el archivo generado en htmlcov/index.html.
+pytest --cov=src --cov-report=term-missing
+📸 Evidencia:
 
-✅ Resultados esperados
-Todos los módulos base deben pasar sus pruebas unitarias (5 passed).
+🔗 Diagrama de Integración Bottom-Up
+El siguiente diagrama representa el proceso de integración de módulos, comenzando desde los cálculos básicos (ISR, seguridad social, bonos, deducciones) hasta el módulo completo de nómina:
 
-La integración en NominaSistema debe calcular correctamente la nómina neta.
+📸 Evidencia:
+<img width="782" height="367" alt="diagrama" src="https://github.com/user-attachments/assets/7c07f5aa-f894-41f1-b58a-45d2d2176faa" />
 
-Cobertura esperada: >80% en módulos.
+✅ Conclusiones
+El enfoque Bottom-Up permitió validar correctamente los módulos de nómina.
 
-📸 Evidencias
-Coloca en esta sección las capturas de pantalla de ejecución:
+Todos los tests pasaron con éxito en los diferentes niveles.
 
-evidencias/pytest_nivel_base.png → salida de pruebas base.
+La estrategia facilitó integrar los componentes de forma ordenada y progresiva.
 
-evidencias/pytest_integracion.png → salida de integración.
+La cobertura obtenida demuestra un alto nivel de confianza en el sistema implementado.
 
-evidencias/cobertura.png → captura de reporte coverage.
-
-evidencias/diagrama.png → diagrama Bottom-Up.
-
-Ejemplo de inclusión en el README:
-
-
-### Ejemplo salida de pruebas (nivel base)
-![Pruebas Nivel Base](evidencias/pytest_nivel_base.png)
-
-### Ejemplo salida de cobertura
-![Cobertura](evidencias/cobertura.png)
-📊 Diagrama de Integración Bottom-Up
-
-📝 Análisis
-Se comprobó la validez de cada módulo por separado antes de integrarlos.
-
-Con el enfoque Bottom-Up, la cobertura de pruebas se garantiza desde abajo hacia arriba.
-
-Se facilita la detección de errores de cálculo antes de que impacten en el sistema completo.
-
-📤 Entregables
-Código fuente (.py)
-
-Evidencias (/evidencias/ con capturas PNG/JPG)
-
-Reporte HTML de cobertura (/htmlcov/)
-
-Diagrama de integración (diagrama.png)
-
-README.md (este archivo)
+👨‍💻 Autor: lisandro
+📅 Fecha: Septiembre 2025
 
