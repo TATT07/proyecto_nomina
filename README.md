@@ -29,7 +29,7 @@ Se aplicó el enfoque **Bottom-Up** porque:
 
 python -m pytest test_bottom_up.py::TestNivelBase -v
 📸 Evidencia:
-<img width="782" height="367" alt="diagrama" src="https://github.com/user-attachments/assets/35634f91-17f3-4d8e-9ad2-4b22f9dd1fda" />
+<img width="1468" height="378" alt="nomina1" src="https://github.com/user-attachments/assets/0b5ffa67-5d14-42ea-97ba-0e85b63a47cc" />
 
 Pruebas de Integración
 bash
