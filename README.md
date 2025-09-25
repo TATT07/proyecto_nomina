@@ -43,7 +43,7 @@ Se midió la cobertura con:
 
 pytest --cov=src --cov-report=term-missing
 📸 Evidencia:
-<img width="1461" height="387" alt="nomina2" src="https://github.com/user-attachments/assets/2dc46519-a70a-4bf4-96d6-4e476a6161b3" />
+<img width="1468" height="378" alt="nomina1" src="https://github.com/user-attachments/assets/86880b0b-e058-4349-84b2-11d0af7fa645" />
 
 
 🔗 Diagrama de Integración Bottom-Up
