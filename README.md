@@ -13,6 +13,8 @@ Se aplicó el enfoque **Bottom-Up** porque:
 - Reduce el uso de stubs, ya que primero se prueban componentes reales de bajo nivel.
 
 ---
+<img width="782" height="367" alt="diagrama" src="https://github.com/user-attachments/assets/224169b5-2a7b-4ae6-a2cb-0d805058abf3" />
+
 
 ## ⚙️ Tecnologías Utilizadas
 - **Python 3.13**
@@ -28,14 +30,12 @@ Se aplicó el enfoque **Bottom-Up** porque:
 ```bash
 python -m pytest test_bottom_up.py::TestNivelBase -v
 📸 Evidencia:
-<img width="1468" height="378" alt="nomina1" src="https://github.com/user-attachments/assets/519924e6-f812-4981-a5ec-df0a5369a0f9" />
 
 Pruebas de Integración
 bash
 Copiar código
 python -m pytest test_bottom_up.py -v
 📸 Evidencia:
-<img width="1461" height="387" alt="nomina2" src="https://github.com/user-attachments/assets/9b9272d2-bf40-4e2d-95a8-b57cd8461b51" />
 
 📊 Cobertura de Código
 Se midió la cobertura con:
@@ -49,7 +49,6 @@ pytest --cov=src --cov-report=term-missing
 El siguiente diagrama representa el proceso de integración de módulos, comenzando desde los cálculos básicos (ISR, seguridad social, bonos, deducciones) hasta el módulo completo de nómina:
 
 📸 Evidencia:
-<img width="782" height="367" alt="diagrama" src="https://github.com/user-attachments/assets/83c6f7d7-bf86-4c45-919c-59bd5df18c14" />
 
 ✅ Conclusiones
 El enfoque Bottom-Up permitió validar correctamente los módulos de nómina.
