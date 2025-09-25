@@ -72,8 +72,7 @@ evidencias/diagrama.png → diagrama Bottom-Up.
 
 Ejemplo de inclusión en el README:
 
-markdown
-Copiar código
+
 ### Ejemplo salida de pruebas (nivel base)
 ![Pruebas Nivel Base](evidencias/pytest_nivel_base.png)
 
